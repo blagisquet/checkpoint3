@@ -1,0 +1,19 @@
+@media screen and (min-width: 1024px) {
+  .navResp {
+    width: 100%;
+    font-size: 36px !important;
+  }
+
+  .imgStyle {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .imgStyle {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+}
