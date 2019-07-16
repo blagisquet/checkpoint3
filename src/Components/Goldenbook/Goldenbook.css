@@ -1,0 +1,17 @@
+.positionGolden {
+  margin-top: 70px;
+}
+
+.titleCenter {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-left:10px;
+  margin-right: 10px;
+}
+
+.goldenBack {
+  background-image: url("http://www.veniard.com/s_product_images/Golden%20Yellow.JPG");
+}

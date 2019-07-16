@@ -35,3 +35,11 @@ api.get('/artists', (req, res) => {
     console.log("Result: " +result);
   });
 });
+
+api.get('/messages', (req, res) => {
+  connection.query('SELECT * FROM messages', (err, result) => {
+    if (err) throw err;
+    res.header.send(result);
+    console.log(result);
+  });
+});

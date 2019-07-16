@@ -39,3 +39,8 @@ VALUES
 ('Tristan', 'Clown', 'https://image.noelshack.com/fichiers/2019/29/2/1563286279-tristan.png', 'Tristan is the funniest of the whole circus, but look at what youre saying it could be fast before he makes a joke about you. You cant beat him at this game.'),
 ('Aurélia', 'Femme à barbe', 'https://image.noelshack.com/fichiers/2019/29/2/1563286283-aurelia.png
 ', 'Aurélia is the Femme à barbe, what can I say... Its just a girl with a beard, thats all.');
+
+INSERT INTO messages (name, email, message)
+VALUES
+('Jean-Michel Amoitié', 'jeanmi@gm.co', 'I really liked this show especially when'),
+('Jean-Willy', 'williamtassy11@gmail.com', 'So sad I cant be here, this circus is so amazing');
