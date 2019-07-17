@@ -1,18 +1,17 @@
 const express = require('express');
-const mysql = require('mysql');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const connection = require('../db');
 
 const api = express();
-api.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
-  next();
-})
-
-const connection = mysql.createConnection({
-  database: "wildcircus",
-  host: "localhost",
-  user: "root",
-  password: "Bptst%988"
-});
+api.use(bodyParser.json());
+api.use(cors({ origin: '*' }));
+// api.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+//   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+//   next();
+// })
 
 connection.connect((err) => {
   if(err) throw err;
@@ -39,7 +38,20 @@ api.get('/artists', (req, res) => {
 api.get('/messages', (req, res) => {
   connection.query('SELECT * FROM messages', (err, result) => {
     if (err) throw err;
-    res.header.send(result);
+    res.send(result);
     console.log(result);
   });
+});
+
+api.post('/messages', (req,res)=>{
+  const sendMessage = req.body;
+  connection.query(
+    `INSERT INTO messages (name, email, message) VALUES ('${sendMessage.name}','${sendMessage.email}','${sendMessage.datMessage}')`,
+    (err, result) => {
+          if (err) {
+            console.log(err)
+          } else {
+            res.sendStatus(200)
+          }
+        });
 });

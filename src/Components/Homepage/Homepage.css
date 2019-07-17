@@ -1,28 +1,69 @@
-.positionHome {
-  margin-top: 70px;
-}
+@media screen and (max-width: 749px) {
+  .positionHome {
+    margin-top: 70px;
+  }
 
-.welcome {
-  text-align: center;
-  position: absolute;
-  top: 7rem;
-  color: #ef7072;
-  font-size: 16px;
-  font-weight: bolder;
-  text-shadow: 1px 1px 2px black;
-  z-index: 3;
-}
+  .welcome {
+    text-align: center;
+    position: absolute;
+    top: 7rem;
+    color: #ef7072;
+    font-size: 16px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    z-index: 3;
+  }
 
-.imgW {
-  z-index: 6;
-  border-radius: 4px;
-}
+  .imgW {
+    z-index: 6;
+    border-radius: 4px;
+  }
 
-.presentation {
-  text-align: center;
-  margin-top: 1rem;
-}
+  .presentation {
+    text-align: center;
+    margin-top: 1rem;
+  }
 
-.centerCard {
-  margin: auto;
+  .centerCard {
+    margin: auto;
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 750px) {
+  .imgW {
+    width: 100%;
+    height: 100%;
+  }
+
+  .positionHome {
+    text-align: center;
+  }
+
+  .welcome {
+    text-align: center;
+    position: absolute;
+    top: 7rem;
+    color: #ef7072;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    z-index: 3;
+
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  .centerCard {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row;
+    /* float: right; */
+    /* margin-right: 12rem; */
+  }
+
+  html {
+    max-width: 100%;
+  }
 }

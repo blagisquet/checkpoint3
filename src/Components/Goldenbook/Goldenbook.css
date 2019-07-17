@@ -14,4 +14,32 @@ form {
 
 .goldenBack {
   background-image: url("http://www.veniard.com/s_product_images/Golden%20Yellow.JPG");
+  text-align: center;
+}
+
+.lessHigher {
+  margin-top: 5rem;
+}
+
+html {
+  max-width: 50rem;
+}
+
+@media screen and (min-width: 573px) {
+  .lessHigher {
+  }
+
+  .widthCard {
+    width: 35rem;
+    float: right;
+  }
+
+  .positionGolden {
+    margin-top: 9rem;
+    width: 200%;
+  }
+
+  html {
+    max-width: 100%;
+  }
 }

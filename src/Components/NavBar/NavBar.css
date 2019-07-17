@@ -1,7 +1,12 @@
 @media screen and (min-width: 1024px) {
   .navResp {
     width: 100%;
-    font-size: 36px !important;
+    font-size: 26px !important;
+  }
+
+  nav p {
+    font-size: 26px;
+    margin-top: 1rem;
   }
 
   .imgStyle {
