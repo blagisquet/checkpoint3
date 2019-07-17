@@ -17,8 +17,8 @@ function Homepage() {
     <div className="container">
       <div className="positionHome">
         <div className="homePres">
-          <img src="https://pbs.twimg.com/media/D9RAmoHWsAYzZpU?format=jpg&name=small" className="imgW" alt="wild" />
-          <h1 className="welcome">Welcome to the Wild Circus,<br /> there is no animal but it's a zoo, you'll see!</h1>
+        <h1 className="welcome text-center">Welcome to the Wild Circus,<br /> there is no animal here but it's a zoo, you'll see!</h1>
+          <img src="https://pbs.twimg.com/media/D9RAmoHWsAYzZpU?format=jpg&name=small" className="imgW" alt="wild" />    
         </div>
         <div className="presentation">
           <h2>What you'll see!</h2>
@@ -29,7 +29,7 @@ function Homepage() {
             return (
                 <div className="card row mb-3">
                   <div className="row">
-                    <div className="col-md-4 centerCard">
+                    <div className="col-md-4 d-flex justify-content-around centerCard">
                       <img src={artist.image} className="card-img" alt={artist.name} />
                     </div>
                     <div className="col-md-8">
